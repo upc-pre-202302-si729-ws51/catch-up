@@ -18,6 +18,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatMenuModule} from "@angular/material/menu";
 import {NgOptimizedImage} from "@angular/common";
 import { FooterContentComponent } from './news/components/footer-content/footer-content.component';
+import { NavComponent } from './news/components/nav/nav.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FooterContentComponent } from './news/components/footer-content/footer-
     AppComponent,
     MainContentComponent,
     FooterContentComponent,
+    NavComponent,
 
   ],
   imports: [
