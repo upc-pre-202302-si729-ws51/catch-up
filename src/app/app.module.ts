@@ -17,11 +17,15 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
 import {MatMenuModule} from "@angular/material/menu";
 import {NgOptimizedImage} from "@angular/common";
+import { FooterContentComponent } from './news/components/footer-content/footer-content.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainContentComponent
+    MainContentComponent,
+    FooterContentComponent,
+
   ],
   imports: [
     BrowserModule,
