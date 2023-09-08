@@ -7,30 +7,30 @@
       </mat-card-title>
     </mat-card-title-group>
   </mat-card-header>
-  <img mat-card-image
+  <img [alt]="article.title"
        [src]="article.urlToImage"
-       [alt]="article.title"/>
+       mat-card-image/>
   <mat-card-content>
     <p>{{ article.description }}</p>
   </mat-card-content>
   <mat-card-actions class="actions-section">
-    <a mat-button
+    <a [href]="article.url"
        class="action-button"
        color="primary"
-       [href]="article.url"
+       mat-button
        target="_blank">More</a>
     <span class="default-spacer"></span>
-    <a mat-button
-       [href]="article.source.url"
+    <a [href]="article.source.url"
+       mat-button
        target="_blank">{{ article.source.name }}</a>
-    <button mat-icon-button
+    <button aria-label="Comments"
             color="white"
-            aria-label="Comments">
+            mat-icon-button>
       <mat-icon>comment</mat-icon>
     </button>
-    <button mat-icon-button
+    <button aria-label="Share"
             color="white"
-            aria-label="Share">
+            mat-icon-button>
       <mat-icon>share</mat-icon>
     </button>
   </mat-card-actions>
