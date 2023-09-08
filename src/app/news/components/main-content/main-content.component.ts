@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Article} from "../../model/article.entity";
 
 @Component({
   selector: 'app-main-content',
@@ -7,6 +8,6 @@ import {Component, Input} from '@angular/core';
 })
 export class MainContentComponent {
   title = 'catch-up';
-  @Input() articles: Array<any> = [];
+  @Input() articles: Array<Article> = [];
 
 }
